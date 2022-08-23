@@ -1,0 +1,126 @@
+.footer {
+    background-color: var(--secondary-bg-color);
+    padding: 60px 0;
+
+}
+
+
+.map {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--light-text-color);
+    text-decoration: none;
+
+}
+
+
+
+.address {
+    font-style: normal;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: baseline;
+
+}
+
+
+.wrapper-address {
+    margin-right: 70px;
+
+}
+
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.footer-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--light-text-color);
+    transition: fill var(--transition-time) var(--transition), background-color var(--transition-time) var(--transition);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+
+            & .footer-list__social-icon,
+            & .footer-list__social-icon {
+                    fill: var(--light-text-color);
+                }
+        }
+
+}
+
+
+.wrapper-sign-up {
+    margin-left: 93px;
+
+}
+
+.sign-form-input {
+    width: 358px;
+    height: 50px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 16px;
+    color: var(--light-text-color);
+
+    &::placeholder {
+            font-family: var(--primary-font);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+    
+        }
+
+}
+
+.sign-form-btn {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sign-form-button__icon {
+    fill: #FFFFFF;
+    margin-left: 10px;
+}
+
+.wrapper-sign-button {
+    display: flex;
+}
+

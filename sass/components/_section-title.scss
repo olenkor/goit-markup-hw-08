@@ -1,0 +1,59 @@
+.hero-studio__title {
+    color: var(--light-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+    width: 696px;
+
+    margin-bottom: 30px;
+
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.16;
+
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.benefits__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    margin-bottom: 10px;
+
+}
+
+.team-description__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+
+.portfolio-description__subtitle {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+
+}
+
+.footer-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    margin-bottom: 20px;
+    color: var(--light-text-color);
+}
