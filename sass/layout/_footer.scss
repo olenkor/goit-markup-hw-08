@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--secondary-bg-color);
-    padding: 60px 0;
+   
 
 }
 
@@ -23,6 +23,8 @@
 .footer-wrapper {
 @media screen and (max-width: 767px) {
         text-align: center;
+        padding: 60px 115px;
+
 
     }
 
@@ -32,6 +34,7 @@
         text-align: center;
         justify-content: space-around;
         align-items: baseline;
+        padding: 60px 115px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -39,6 +42,7 @@
         justify-content: space-between;
         align-items: baseline;
         text-align: left;
+        padding: 60px 115px;
     }
 
 }
