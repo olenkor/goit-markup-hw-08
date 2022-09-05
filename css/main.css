@@ -1316,7 +1316,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-list__item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 5);
   }
 }
 @media screen and (max-width: 767px) {

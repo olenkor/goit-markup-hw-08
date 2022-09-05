@@ -21,7 +21,8 @@
         }
     
         @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - 90px) / 4);
+            flex-basis: calc((100% - 90px) / 5);
+            
         }
     
         @media screen and (max-width: 767px) {
