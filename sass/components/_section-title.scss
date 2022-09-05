@@ -20,6 +20,10 @@
     text-align: center;
     margin-bottom: 50px;
 
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+
 }
 
 .benefits__title {
@@ -27,6 +31,10 @@
     text-transform: uppercase;
     line-height: 1.14;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 
 }
 

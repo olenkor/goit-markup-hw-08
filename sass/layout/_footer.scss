@@ -17,18 +17,46 @@
 
 .address {
     font-style: normal;
+    margin-top: 20px;
 }
 
 .footer-wrapper {
-    display: flex;
-    align-items: baseline;
+@media screen and (max-width: 767px) {
+        text-align: center;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        text-align: left;
+    }
 
 }
 
 
 .wrapper-address {
-    margin-right: 70px;
+    @media screen and (max-width: 767px) {
+            width: 100%;
+        }
 
+}
+
+.wrapper-social-links{
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
 }
 
 
@@ -64,10 +92,24 @@
 }
 
 
-.wrapper-sign-up {
-    margin-left: 93px;
+// .wrapper-sign-button {
+   
+//     @media screen and (max-width: 767px) {
+//             display: block;
+            
+//         }
+    
+//         @media screen and (min-width: 768px) and (max-width: 1199px) {
+//             margin-top: 60px;
+//             display: flex;
+//             flex-direction: column;
+//             flex-wrap: wrap;
+//             align-items: center;
+    
+    
+//         }
 
-}
+// }
 
 .sign-form-input {
     width: 358px;
@@ -82,6 +124,16 @@
     line-height: 1.25;
     padding-left: 16px;
     color: var(--light-text-color);
+
+    @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 12px;
+            margin-bottom: 0px;
+            max-width: 358px;
+        }
 
     &::placeholder {
             font-family: var(--primary-font);
@@ -105,14 +157,21 @@
     height: 50px;
     color: var(--light-text-color);
     background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    // border-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-left: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border: none;
 
+            @media screen and (min-width: 1200px) {
+                    display: inline-flex;
+                }
+            
+            
 }
 
 .sign-form-button__icon {

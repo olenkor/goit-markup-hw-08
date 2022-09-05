@@ -27,9 +27,9 @@
       <div class="container page-header-container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
-          <ul class="nav-list">
+          <ul class="nav-list main-nav">
             <li class="list-item nav-list__item">
-              <a class="nav-list__link" href="./index.html">Студія</a>
+              <a class="nav-list__link " href="./index.html">Студія</a>
             </li>
             <li class="list-item list-item nav-list__item">
               <a class="nav-list__link nav-list__link_current" href="./portfolio.html">Портфоліо</a>
@@ -55,11 +55,63 @@
             </a>
           </li>
         </ul>
-      </div>
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40px" height="40px">
+            <use href="./images/icons/sprite_.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
     
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+    
+            <ul class="mobile-menu-nav list">
+              <li class="mobile-menu-nav__item">
+                <a href="./index.html" class="mobile-menu-nav__link current">Cтудія</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a href="./portfolio.html" class="mobile-menu-nav__link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a href="" class="mobile-menu-nav__link">Контакти</a>
+              </li>
+            </ul>
+    
+            <ul class="mobile-menu-contact list">
+              <li class="mobile-menu-contact__item">
+                <a href="tel:+380961111111" class="mobile-menu-contact__link-mobile">
+                  +38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu-contact__item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-contact__link">
+                  info@devstudio.com</a>
+              </li>
+            </ul>
+    
+            <ul class="mobile-menu-social list">
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Instagram</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Twitter</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Facebook</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="section portfolio-hero">
 
         <div class="container">
@@ -87,7 +139,24 @@
                 <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
 
                   <div class="portfolio-overlay">
-                    <img class="portfolio-overlay__image" src="./images/Portfolio/technokriak.jpg" alt="Технокряк" width="370" />
+
+                    <picture>
+                      <source srcset="./images/adaptive/desktop/portfolio1-370.jpg 1x, ./images/adaptive/desktop/portfolio1-740@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source srcset="./images/adaptive/tablet/portfolio1-354.jpg 1x, ./images/adaptive/tablet/portfolio1-708@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source srcset="./images/adaptive/mobile/portfolio1-450.jpg 1x, ./images/adaptive/mobile/portfolio1-900@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    
+
+                    <img 
+                    class="portfolio-overlay__image" 
+                    src="./images/adaptive/desktop/portfolio1-370.jpg" 
+                    alt="Технокряк" 
+                    width="370" />
+
+                    </picture>
+
                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.</p>
@@ -105,8 +174,23 @@
               
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                   <div class="portfolio-overlay">
-                    <img class="portfolio-overlay__image" src="./images/Portfolio/posterNewOrlean.jpg" alt="Постер New Orlean vs Golden Star"
-                      width="370" />
+
+                    <picture>
+                      <source srcset="./images/adaptive/desktop/portfolio2-370.jpg 1x, ./images/adaptive/desktop/portfolio2-740@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source srcset="./images/adaptive/tablet/portfolio2-354.jpg 1x, ./images/adaptive/tablet/portfolio2-708@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source srcset="./images/adaptive/mobile/portfolio2-450.jpg 1x, ./images/adaptive/mobile/portfolio2-900@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+
+                    <img 
+                    class="portfolio-overlay__image" 
+                    src="./images/adaptive/desktop/portfolio2-370.jpg" 
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370" />
+
+                    </picture>
+
                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.</p>
@@ -122,7 +206,23 @@
             
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                   <div class="portfolio-overlay">
-                    <img class="portfolio-overlay__image" src="./images/Portfolio/seafood.jpg" alt="Ресторан Seafood" width="370" />
+
+                    <picture>
+                      <source srcset="./images/adaptive/desktop/portfolio3-370.jpg 1x, ./images/adaptive/desktop/portfolio3-740@2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                      <source srcset="./images/adaptive/tablet/portfolio3-354.jpg 1x, ./images/adaptive/tablet/portfolio3-708@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                      <source srcset="./images/adaptive/mobile/portfolio3-450.jpg 1x, ./images/adaptive/mobile/portfolio3-900@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+
+                    <img 
+                    class="portfolio-overlay__image" 
+                    src="./images/adaptive/desktop/portfolio3-370.jpg" 
+                    alt="Ресторан Seafood" 
+                    width="370" />
+
+                    </picture>
+
                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.</p>
@@ -138,7 +238,23 @@
             
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                 <div class="portfolio-overlay">
-                  <img class="portfolio-overlay__image" src="./images/Portfolio/prime.jpg" alt="Проєкт Prime" width="370" />
+
+                  <picture>
+                    <source srcset="./images/adaptive/desktop/portfolio4-370.jpg 1x, ./images/adaptive/desktop/portfolio4-740@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="./images/adaptive/tablet/portfolio4-354.jpg 1x, ./images/adaptive/tablet/portfolio4-708@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="./images/adaptive/mobile/portfolio4-450.jpg 1x, ./images/adaptive/mobile/portfolio4-900@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+
+                  <img 
+                  class="portfolio-overlay__image" 
+                  src="./images/adaptive/desktop/portfolio4-370.jpg" 
+                  alt="Проєкт Prime" 
+                  width="370" />
+
+                  </picture>
+
                   <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -154,7 +270,23 @@
               
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                  <div class="portfolio-overlay">
-                    <img class="portfolio-overlay__image" src="./images/Portfolio/boxes.jpg" alt="Проєкт Boxes" width="370" />
+
+                  <picture>
+                    <source srcset="./images/adaptive/desktop/portfolio5-370.jpg 1x, ./images/adaptive/desktop/portfolio5-740@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="./images/adaptive/tablet/portfolio5-354.jpg 1x, ./images/adaptive/tablet/portfolio5-708@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="./images/adaptive/mobile/portfolio5-450.jpg 1x, ./images/adaptive/mobile/portfolio5-900@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+
+                    <img 
+                    class="portfolio-overlay__image" 
+                    src="./images/adaptive/desktop/portfolio5-370.jpg" 
+                    alt="Проєкт Boxes" 
+                    width="370" />
+
+                    </picture>
+
                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                       дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.</p>
@@ -170,7 +302,23 @@
              
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                  <div class="portfolio-overlay">
-                  <img class="portfolio-overlay__image" src="./images/Portfolio/inspiration.jpg" alt="Inspiration has no Borders" width="370" />
+
+                  <picture>
+                    <source srcset="./images/adaptive/desktop/portfolio6-370.jpg 1x, ./images/adaptive/desktop/portfolio6-740@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="./images/adaptive/tablet/portfolio6-354.jpg 1x, ./images/adaptive/tablet/portfolio6-708@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="./images/adaptive/mobile/portfolio6-450.jpg 1x, ./images/adaptive/mobile/portfolio6-900@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+
+                  <img 
+                  class="portfolio-overlay__image" 
+                  src="./images/adaptive/desktop/portfolio6-370.jpg" 
+                  alt="Inspiration has no Borders" 
+                  width="370" />
+
+                  </picture>
+
                   <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -186,7 +334,23 @@
               
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                  <div class="portfolio-overlay">
-                  <img class="portfolio-overlay__image" src="./images/Portfolio/limitededition.jpg" alt="Видання Limited Edition" width="370" />
+
+                  <picture>
+                    <source srcset="./images/adaptive/desktop/portfolio7-370.jpg 1x, ./images/adaptive/desktop/portfolio7-740@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="./images/adaptive/tablet/portfolio7-354.jpg 1x, ./images/adaptive/tablet/portfolio7-708@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="./images/adaptive/mobile/portfolio7-450.jpg 1x, ./images/adaptive/mobile/portfolio7-900@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+
+                  <img 
+                  class="portfolio-overlay__image" 
+                  src="./images/adaptive/desktop/portfolio7-370.jpg" 
+                  alt="Видання Limited Edition" 
+                  width="370" />
+
+                  </picture>
+
                   <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -202,7 +366,23 @@
               
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                <div class="portfolio-overlay">
-                  <img class="portfolio-overlay__image" src="./images/Portfolio/lab.jpg" alt="Проект LAB" width="370" />
+
+                <picture>
+                  <source srcset="./images/adaptive/desktop/portfolio8-370.jpg 1x, ./images/adaptive/desktop/portfolio8-740@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <source srcset="./images/adaptive/tablet/portfolio8-354.jpg 1x, ./images/adaptive/tablet/portfolio8-708@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source srcset="./images/adaptive/mobile/portfolio8-450.jpg 1x, ./images/adaptive/mobile/portfolio8-900@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img 
+                  class="portfolio-overlay__image" 
+                  src="./images/adaptive/desktop/portfolio8-370.jpg" 
+                  alt="Проект LAB" 
+                  width="370" />
+
+                  </picture>
+
                   <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -218,7 +398,23 @@
               
               <a class="link portfolio-item__link" rel="preconnect" href="https://www.google.com/">
                 <div class="portfolio-overlay">
-                  <img class="portfolio-overlay__image" src="./images/Portfolio/growingbusiness.jpg" alt="Growing Business" width="370" />
+
+                  <picture>
+                    <source srcset="./images/adaptive/desktop/portfolio9-370.jpg 1x, ./images/adaptive/desktop/portfolio9-740@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source srcset="./images/adaptive/tablet/portfolio9-354.jpg 1x, ./images/adaptive/tablet/portfolio9-708@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source srcset="./images/adaptive/mobile/portfolio9-450.jpg 1x, ./images/adaptive/mobile/portfolio9-900@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+
+                  <img 
+                  class="portfolio-overlay__image" 
+                  src="./images/adaptive/desktop/portfolio9-370.jpg" 
+                  alt="Growing Business" 
+                  width="370" />
+
+                  </picture>
+
                   <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -312,6 +508,6 @@
       </div>
     
     </footer>
-    
+     -->
   </body>
 </html>

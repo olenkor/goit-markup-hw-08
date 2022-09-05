@@ -1,5 +1,8 @@
 .work {
-    padding-top: 0
+    padding-top: 0;
+    @media screen and (max-width: 1099px) {
+            display: none;
+        }
 }
 
 
