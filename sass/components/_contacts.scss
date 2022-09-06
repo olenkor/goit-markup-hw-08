@@ -49,9 +49,11 @@
 
 
 
-.contacts:not(:last-child) {
+.contacts {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 10px;
+        display: block;
+        margin-left: 96px;
+        margin-right: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -70,11 +72,19 @@
         letter-spacing: 0.02em;
         text-decoration: none;
         align-items: center;
+       
+        
     
         &:hover,
         &:focus {
             color: var(--accent-color);
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                padding-top: 0;
+                padding-bottom: 0;
+               
+                }
 
     
         @media screen and (min-width: 1200px) {

@@ -1,5 +1,7 @@
 .footer {
     background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
    
 
 }
@@ -23,7 +25,7 @@
 .footer-wrapper {
 @media screen and (max-width: 767px) {
         text-align: center;
-        padding: 60px 115px;
+        
 
 
     }
@@ -34,7 +36,7 @@
         text-align: center;
         justify-content: space-around;
         align-items: baseline;
-        padding: 60px 115px;
+      
     }
 
     @media screen and (min-width: 1200px) {
@@ -42,7 +44,7 @@
         justify-content: space-between;
         align-items: baseline;
         text-align: left;
-        padding: 60px 115px;
+        
     }
 
 }
@@ -96,24 +98,16 @@
 }
 
 
-// .wrapper-sign-button {
+.wrapper-sign-up {
    
-//     @media screen and (max-width: 767px) {
-//             display: block;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-top: 60px;
             
-//         }
-    
-//         @media screen and (min-width: 768px) and (max-width: 1199px) {
-//             margin-top: 60px;
-//             display: flex;
-//             flex-direction: column;
-//             flex-wrap: wrap;
-//             align-items: center;
     
     
-//         }
+        }
 
-// }
+}
 
 .sign-form-input {
     width: 358px;
@@ -165,11 +159,22 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-left: 12px;
-    display: flex;
+    // display: flex;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px)
+     {
+         display: block;
+          margin: auto;
+        margin-top: 20px;
+    
+    
+    
+        }
 
             @media screen and (min-width: 1200px) {
                     display: inline-flex;
@@ -184,6 +189,7 @@
 }
 
 .wrapper-sign-button {
-    display: flex;
+    margin-top: 20px ;
+    
 }
 

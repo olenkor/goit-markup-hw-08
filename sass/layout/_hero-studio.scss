@@ -31,8 +31,12 @@
     border-radius: 4px;
 
     margin: 0 auto;
-    padding: 10px 30px;
+    padding: 10px 24px;
     min-width: 200px;
     transition: background-color var(--transition);
+
+    @media screen and (min-width: 1200px) {
+            padding: 10px 32px;
+        }
 
 }
