@@ -352,7 +352,6 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
-
 @media screen and (min-widht: 480px) {
   .container {
     width: 480px;
@@ -368,6 +367,7 @@ img {
     width: 1200px;
   }
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
