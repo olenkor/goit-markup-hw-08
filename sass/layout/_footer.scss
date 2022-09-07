@@ -160,13 +160,13 @@
     border-radius: 4px;
     margin-left: 12px;
     // display: flex;
-    margin-top: 20px;
+    // margin-top: 20px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border: none;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px)
+    @media screen and (max-width: 768px) and (max-width: 1199px)
      {
          display: block;
           margin: auto;
@@ -186,6 +186,7 @@
 .sign-form-button__icon {
     fill: #FFFFFF;
     margin-left: 10px;
+    align-items: center;
 }
 
 .wrapper-sign-button {
