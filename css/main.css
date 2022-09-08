@@ -1407,7 +1407,7 @@ img {
 .work {
   padding-top: 0;
 }
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
