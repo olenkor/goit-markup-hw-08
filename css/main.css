@@ -806,7 +806,6 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 @media screen and (max-width: 1199px) {
@@ -820,27 +819,22 @@ img {
   }
 }
 
-@media screen and (max-width: 319px) {
-  .clients-list__item {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .clients-list__item {
     flex-basis: calc((100% - 30px) / 2);
-    gap: 30px;
+    width: 210px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list__item {
     flex-basis: calc((100% - 60px) / 3);
-    gap: 30px;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-list__item {
     flex-basis: calc((100% - 150px) / 6);
-    gap: 30px;
+    width: 170px;
   }
 }
 
