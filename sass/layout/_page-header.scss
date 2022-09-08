@@ -33,7 +33,7 @@
 @media screen and (min-width: 1200px) {
             display: flex;
             align-items: center;
-            margin-left: 93px;
+            // margin-left: 93px;
         }
     
         
@@ -51,8 +51,8 @@
         }
                 @media screen and (min-width: 768px) and (max-width: 1199px) {
                 margin-left: auto;
-                padding-top: 21px;
-                padding-bottom: 21px;
+                // padding-top: 21px;
+                // padding-bottom: 21px;
                     
                 }
 
@@ -70,6 +70,11 @@
                     display: flex;
                     margin-left: 30px;
                 }
+                
+}
+
+.nav-list__item_contacts:not(:last-child){
+    margin-bottom: 10px;
 }
 
 
