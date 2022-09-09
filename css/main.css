@@ -901,6 +901,10 @@ img {
   }
 }
 
+.wrapper-sign-up {
+  margin-top: 60px;
+}
+
 .footer-list {
   display: flex;
   justify-content: center;
@@ -928,7 +932,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1061,6 +1064,9 @@ img {
 @media screen and (max-width: 767px) {
   .portfolio-list__item {
     margin-bottom: 30px;
+  }
+  .portfolio-list__item:last-child {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
